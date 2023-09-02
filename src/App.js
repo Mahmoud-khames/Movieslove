@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route
-          path="movieslove/"
+          path="/"
           element={
             <>
               <Navb />

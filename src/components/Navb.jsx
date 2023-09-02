@@ -70,7 +70,7 @@ console.log(Location);
                   Location.pathname === "movieslove/" ? "active" : ""
                 }`}
               >
-                <Link to="movieslove/" className="nav-link">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
