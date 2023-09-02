@@ -60,14 +60,14 @@ console.log(Location);
           </div>
           <div className="nav-main">
             <div className="nav-logo2">
-              <Link to={"movieslove/"} className="nav-logo-text2">
+              <Link to={"/"} className="nav-logo-text2">
                 <img src={logoPage} alt="logo-page.png" />
               </Link>
             </div>
             <ul className="nav-list">
               <li
                 className={`nav-item ${
-                  Location.pathname === "movieslove/" ? "active" : ""
+                  Location.pathname === "/" ? "active" : ""
                 }`}
               >
                 <Link to="/" className="nav-link">

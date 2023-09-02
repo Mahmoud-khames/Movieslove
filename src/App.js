@@ -110,7 +110,7 @@ function App() {
           }
         />
         <Route
-          path="/Register"
+          path="/register"
           element={
             <>
               <Navb />
