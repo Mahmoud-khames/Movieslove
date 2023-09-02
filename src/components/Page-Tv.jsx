@@ -43,7 +43,7 @@ export default function TvPage() {
           href="../../img/logo.png"
           type="image/x-icon"
         />
-        <title>Movies</title>
+        <title>TvShows</title>
       </Helmet>
       <div className="discover_movies">
         <div className="container-fluid">
