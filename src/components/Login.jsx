@@ -50,7 +50,10 @@ export default function Login() {
                 <button className="button1">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </button>
-                <Link to="/register" className="button2 text-decoration-none">
+                <Link
+                  to="movieslove/register"
+                  className="button2 text-decoration-none"
+                >
                   register
                 </Link>
               </div>

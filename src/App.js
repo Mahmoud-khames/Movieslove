@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          path="movieslove/"
           element={
             <>
               <Navb />
@@ -47,7 +47,7 @@ function App() {
           }
         />
         <Route
-          path="/movie/:movie_id"
+          path="movieslove/movie/:movie_id"
           element={
             <>
               <Navb />
@@ -56,7 +56,7 @@ function App() {
           }
         />
         <Route
-          path="/tv/:tv_id"
+          path="movieslove/tv/:tv_id"
           element={
             <>
               <Navb />
@@ -65,7 +65,7 @@ function App() {
           }
         />
         <Route
-          path="/discover/movies"
+          path="movieslove/discover/movies"
           element={
             <>
               <Navb />
@@ -74,7 +74,7 @@ function App() {
           }
         />
         <Route
-          path="/discover/tv"
+          path="movieslove/discover/tv"
           element={
             <>
               <Navb />
@@ -83,7 +83,7 @@ function App() {
           }
         />
         <Route
-          path="/movies"
+          path="movieslove/movies"
           element={
             <>
               <Navb />
@@ -92,7 +92,7 @@ function App() {
           }
         />
         <Route
-          path="/tvshows"
+          path="movieslove/tvshows"
           element={
             <>
               <Navb />
@@ -101,7 +101,7 @@ function App() {
           }
         />
         <Route
-          path="/search/:query"
+          path="movieslove/search/:query"
           element={
             <>
               <Navb />
@@ -110,7 +110,7 @@ function App() {
           }
         />
         <Route
-          path="/Register"
+          path="movieslove/Register"
           element={
             <>
               <Navb />
@@ -119,7 +119,7 @@ function App() {
           }
         />
         <Route
-          path="/login"
+          path="movieslove/login"
           element={
             <>
               <Navb />

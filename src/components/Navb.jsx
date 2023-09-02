@@ -15,9 +15,9 @@ console.log(Location);
       let query = e.target.value;
 
       if (query === "") {
-        navigate("/");
+        navigate("movieslove/");
       } else {
-        navigate(`/search/${query}`);
+        navigate(`movieslove/search/${query}`);
       }
     }
   useEffect(() => {
@@ -54,13 +54,13 @@ console.log(Location);
       <div className="header ">
         <div className="main-nav container">
           <div className="nav-logo">
-            <Link to={"/"} className="nav-logo-text">
+            <Link to={"movieslove/"} className="nav-logo-text">
               <img src={logoPage} alt="logo-page.png" />
             </Link>
           </div>
           <div className="nav-main">
             <div className="nav-logo2">
-              <Link to={"/"} className="nav-logo-text2">
+              <Link to={"movieslove/"} className="nav-logo-text2">
                 <img src={logoPage} alt="logo-page.png" />
               </Link>
             </div>
@@ -70,7 +70,7 @@ console.log(Location);
                   Location.pathname === "movieslove/" ? "active" : ""
                 }`}
               >
-                <Link to="/" className="nav-link">
+                <Link to="movieslove/" className="nav-link">
                   Home
                 </Link>
               </li>
@@ -88,24 +88,28 @@ console.log(Location);
                 <ul className="dropdown-menu">
                   <li
                     className={`nav-item ${
-                      Location.pathname === "/discover/movies" ? "active" : ""
+                      Location.pathname === "movieslove/discover/movies"
+                        ? "active"
+                        : ""
                     }`}
                   >
                     <Link
                       className="nav-link dropdown-item"
-                      to={"/discover/movies"}
+                      to={"movieslove/discover/movies"}
                     >
                       Movies
                     </Link>
                   </li>
                   <li
                     className={`nav-item ${
-                      Location.pathname === "/dicover/tv" ? "active" : ""
+                      Location.pathname === "movieslove/dicover/tv"
+                        ? "active"
+                        : ""
                     }`}
                   >
                     <Link
                       className="nav-link dropdown-item"
-                      to={"/discover/tv"}
+                      to={"movieslove/discover/tv"}
                     >
                       TV Shows
                     </Link>
@@ -114,19 +118,19 @@ console.log(Location);
               </li>
               <li
                 className={`nav-item ${
-                  Location.pathname === "/movies" ? "active" : ""
+                  Location.pathname === "movieslove/movies" ? "active" : ""
                 }`}
               >
-                <Link to={"/movies"} className="nav-link">
+                <Link to={"movieslove/movies"} className="nav-link">
                   Movies
                 </Link>
               </li>
               <li
                 className={`nav-item ${
-                  Location.pathname === "/tvshows" ? "active" : ""
+                  Location.pathname === "movieslove/tvshows" ? "active" : ""
                 }`}
               >
-                <Link to={"/tvshows"} className="nav-link">
+                <Link to={"movieslove/tvshows"} className="nav-link">
                   TV Shows
                 </Link>
               </li>
@@ -163,7 +167,7 @@ console.log(Location);
                     Location.pathname === "/login" ? "active" : ""
                   }`}
                 >
-                  <Link to={"/login"} className="nav-link">
+                  <Link to={"movieslove/login"} className="nav-link">
                     Login
                   </Link>
                 </li>
@@ -172,7 +176,7 @@ console.log(Location);
                     Location.pathname === "/register" ? "active" : ""
                   }`}
                 >
-                  <Link to={"/register"} className="nav-link">
+                  <Link to={"movieslove/register"} className="nav-link">
                     Register
                   </Link>
                 </li>
