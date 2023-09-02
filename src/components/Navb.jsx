@@ -67,10 +67,10 @@ console.log(Location);
             <ul className="nav-list">
               <li
                 className={`nav-item ${
-                  Location.pathname === "/" ? "active" : ""
+                  Location.pathname === "movieslove/" ? "active" : ""
                 }`}
               >
-                <Link to="/" className="nav-link">
+                <Link to="movieslove/" className="nav-link">
                   Home
                 </Link>
               </li>
