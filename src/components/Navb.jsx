@@ -15,9 +15,9 @@ console.log(Location);
       let query = e.target.value;
 
       if (query === "") {
-        navigate("movieslove/");
+        navigate("/");
       } else {
-        navigate(`movieslove/search/${query}`);
+        navigate(`/search/${query}`);
       }
     }
   useEffect(() => {
@@ -54,7 +54,7 @@ console.log(Location);
       <div className="header ">
         <div className="main-nav container">
           <div className="nav-logo">
-            <Link to={"movieslove/"} className="nav-logo-text">
+            <Link to={"/"} className="nav-logo-text">
               <img src={logoPage} alt="logo-page.png" />
             </Link>
           </div>
@@ -70,7 +70,7 @@ console.log(Location);
                   Location.pathname === "movieslove/" ? "active" : ""
                 }`}
               >
-                <Link to="movieslove/" className="nav-link">
+                <Link to="/" className="nav-link">
                   Home
                 </Link>
               </li>
@@ -88,28 +88,28 @@ console.log(Location);
                 <ul className="dropdown-menu">
                   <li
                     className={`nav-item ${
-                      Location.pathname === "movieslove/discover/movies"
+                      Location.pathname === "/discover/movies"
                         ? "active"
                         : ""
                     }`}
                   >
                     <Link
                       className="nav-link dropdown-item"
-                      to={"movieslove/discover/movies"}
+                      to={"/discover/movies"}
                     >
                       Movies
                     </Link>
                   </li>
                   <li
                     className={`nav-item ${
-                      Location.pathname === "movieslove/dicover/tv"
+                      Location.pathname === "/dicover/tv"
                         ? "active"
                         : ""
                     }`}
                   >
                     <Link
                       className="nav-link dropdown-item"
-                      to={"movieslove/discover/tv"}
+                      to={"/discover/tv"}
                     >
                       TV Shows
                     </Link>
@@ -118,19 +118,19 @@ console.log(Location);
               </li>
               <li
                 className={`nav-item ${
-                  Location.pathname === "movieslove/movies" ? "active" : ""
+                  Location.pathname === "/movies" ? "active" : ""
                 }`}
               >
-                <Link to={"movieslove/movies"} className="nav-link">
+                <Link to={"/movies"} className="nav-link">
                   Movies
                 </Link>
               </li>
               <li
                 className={`nav-item ${
-                  Location.pathname === "movieslove/tvshows" ? "active" : ""
+                  Location.pathname === "/tvshows" ? "active" : ""
                 }`}
               >
-                <Link to={"movieslove/tvshows"} className="nav-link">
+                <Link to={"/tvshows"} className="nav-link">
                   TV Shows
                 </Link>
               </li>
@@ -167,7 +167,7 @@ console.log(Location);
                     Location.pathname === "/login" ? "active" : ""
                   }`}
                 >
-                  <Link to={"movieslove/login"} className="nav-link">
+                  <Link to={"/login"} className="nav-link">
                     Login
                   </Link>
                 </li>
@@ -176,7 +176,7 @@ console.log(Location);
                     Location.pathname === "/register" ? "active" : ""
                   }`}
                 >
-                  <Link to={"movieslove/register"} className="nav-link">
+                  <Link to={"/register"} className="nav-link">
                     Register
                   </Link>
                 </li>

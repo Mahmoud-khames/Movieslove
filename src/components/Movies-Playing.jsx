@@ -60,7 +60,7 @@ const dispatch = useDispatch()
                         <SwiperSlide key={i}>
                           {({ isActive }) => (
                             <Link
-                              to={`movieslove/movie/${item.id}`}
+                              to={`/movie/${item.id}`}
                               onClick={() => window.scrollTo(0, 0)}
                               className="item text-decoration-none p-0 me-2 pt-1"
                             >

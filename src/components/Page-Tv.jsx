@@ -180,7 +180,7 @@ export default function TvPage() {
                   return (
                     <div class="col-xl-2 col-md-3 col-sm-6 col-6 p-1  pointer position-relative">
                       <Link
-                        to={`movieslove/tv/${item.id}`}
+                        to={`/tv/${item.id}`}
                         onClick={handleLinkClick}
                         className="item text-decoration-none p-0 me-2 pt-1"
                       >

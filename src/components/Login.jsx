@@ -51,7 +51,7 @@ export default function Login() {
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </button>
                 <Link
-                  to="movieslove/register"
+                  to="/register"
                   className="button2 text-decoration-none"
                 >
                   register

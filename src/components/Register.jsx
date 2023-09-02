@@ -65,7 +65,7 @@ export default function Register() {
                 <button className="submit">Submit</button>
                 <p className="signin">
                   Already have an acount ?{" "}
-                  <Link to="movieslove/login" className="text-decoration-none">
+                  <Link to="/login" className="text-decoration-none">
                     Login
                   </Link>{" "}
                 </p>

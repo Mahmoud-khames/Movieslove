@@ -75,7 +75,7 @@ export default function Recommendations() {
                     <SwiperSlide key={i}>
                       {({ isActive }) => (
                         <Link
-                          to={`movieslove/tv/${item.id}`}
+                          to={`/tv/${item.id}`}
                           onClick={handleLinkClick}
                           className="item text-decoration-none p-0 me-2 pt-1"
                         >
