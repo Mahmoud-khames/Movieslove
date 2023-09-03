@@ -21,7 +21,7 @@ const dispatch = useDispatch();
         <div className="topmovies top">
           <div className="row">
             <div className="col-md-12">
-              <Link href="/tvshows" className="text-decoration-none ms-2">
+              <Link to="/tvshows" className="text-decoration-none ms-2">
                 <h2>
                   Airing Today TV Shows{" "}
                   <span className="span">

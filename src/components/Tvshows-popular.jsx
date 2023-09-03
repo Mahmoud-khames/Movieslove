@@ -20,7 +20,7 @@ const dispatch = useDispatch();
         <div className="topmovies">
           <div className="row">
             <div className="col-md-12">
-              <Link href="/tvshows" className="text-decoration-none ms-2">
+              <Link to="/tvshows" className="text-decoration-none ms-2">
                 <h2>
                   Popular TV Shows{" "}
                   <span className="span">
