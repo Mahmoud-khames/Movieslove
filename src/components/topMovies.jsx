@@ -25,7 +25,7 @@ const dispatch = useDispatch()
     <div className="topmovies">
         <div className="row">
             <div className="col-md-12">
-            <a href="/#" className="text-decoration-none ms-2">
+            <a href="/movies" className="text-decoration-none ms-2">
                 <h2>Top Movies This Week <span className="span">Explore All <i className="fa-solid fa-angles-right"></i></span></h2>
             </a>
             </div>

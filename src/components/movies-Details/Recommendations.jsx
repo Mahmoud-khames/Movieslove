@@ -36,14 +36,14 @@ export default function Recommendations() {
       <div className="topmovies">
         <div className="row">
           <div className="col-md-12">
-            <a href="/#" className="text-decoration-none ms-2">
+            <Link to="/movies" className="text-decoration-none ms-2">
               <h2>
                 Recommendations
                 <span className="span">
                   Explore All <i className="fa-solid fa-angles-right"></i>
                 </span>
               </h2>
-            </a>
+            </Link>
           </div>
           {data && (
             <Swiper

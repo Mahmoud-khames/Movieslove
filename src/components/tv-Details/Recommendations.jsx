@@ -35,14 +35,14 @@ export default function Recommendations() {
       <div className="topmovies">
         <div className="row">
           <div className="col-md-12">
-            <a href="/#" className="text-decoration-none ms-2">
+            <Link to="/tvshows" className="text-decoration-none ms-2">
               <h2>
                 Recommendations
                 <span className="span">
                   Explore All <i className="fa-solid fa-angles-right"></i>
                 </span>
               </h2>
-            </a>
+            </Link>
           </div>
           {data && (
             <Swiper
@@ -69,44 +69,40 @@ export default function Recommendations() {
               navigation={true}
               autoplay={{ delay: 10000 }}
             >
-                {data.map((item ,i) => {
-                 const imageUrl = `https://image.tmdb.org/t/p/w500/${item.poster_path}`;
-                  return (
-                    <SwiperSlide key={i}>
-                      {({ isActive }) => (
-                        <Link
-                          to={`/tv/${item.id}`}
-                          onClick={handleLinkClick}
-                          className="item text-decoration-none p-0 me-2 pt-1"
-                        >
-                          <div className="custom-slide">
-                            <div className="custom-slide-img">
-                              <img
-                                className="custom-img "
-                                src={imageUrl}
-                                alt="backdrop_path"
-                              />
-                              <span className="custom-average">
-                                {item.vote_average}
-                              </span>
-                            </div>
-                            <div className="custom-slide-text text-center mt-2 p-1">
-                              <h2 className="custom-title h6">{item.name}</h2>
-                            </div>
+              {data.map((item, i) => {
+                const imageUrl = `https://image.tmdb.org/t/p/w500/${item.poster_path}`;
+                return (
+                  <SwiperSlide key={i}>
+                    {({ isActive }) => (
+                      <Link
+                        to={`/tv/${item.id}`}
+                        onClick={handleLinkClick}
+                        className="item text-decoration-none p-0 me-2 pt-1"
+                      >
+                        <div className="custom-slide">
+                          <div className="custom-slide-img">
+                            <img
+                              className="custom-img "
+                              src={imageUrl}
+                              alt="backdrop_path"
+                            />
+                            <span className="custom-average">
+                              {item.vote_average}
+                            </span>
                           </div>
-                        </Link>
-                      )}
-                    </SwiperSlide>
-                  );
-                  
-                  
-                 
-                
+                          <div className="custom-slide-text text-center mt-2 p-1">
+                            <h2 className="custom-title h6">{item.name}</h2>
+                          </div>
+                        </div>
+                      </Link>
+                    )}
+                  </SwiperSlide>
+                );
               })}
             </Swiper>
           )}
         </div>
-      </div> 
+      </div>
     </>
   );
 }
