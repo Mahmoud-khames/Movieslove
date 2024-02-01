@@ -1,18 +1,22 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react";
 import { useSelector , useDispatch } from "react-redux"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
 import { fetchTvtop } from "../Redux/tv-slice-top";
 import { Link } from 'react-router-dom';
+import MyLoader from "./MyLoading";
 
 export default function TvTop() {
   
   let tvtop = useSelector((state) => state.tvtop);
+      const [isLoading, setIsLoading] = useState(false);
 const dispatch = useDispatch();
 
-      useEffect(() => {
-        dispatch(fetchTvtop())
+  useEffect(() => {
+        setIsLoading(true);
+    dispatch(fetchTvtop());
+    setIsLoading(false);
       }, [])
     return (
       <>
@@ -56,8 +60,11 @@ const dispatch = useDispatch();
                 {tvtop.map((item) => {
                   return item.map((item, i) => {
                     const imageUrl = `https://image.tmdb.org/t/p/w500/${item.poster_path}`;
-                    return (
-                      <SwiperSlide key={item.id}>
+                    {
+                     return isLoading ? (
+                        <MyLoader key={`loader-${i}`} className="col p-1" />
+                      ) : (
+                        <SwiperSlide key={i}>
                         {({ isActive }) => (
                           <Link
                             to={`/tv/${item.id}`}
@@ -82,7 +89,8 @@ const dispatch = useDispatch();
                           </Link>
                         )}
                       </SwiperSlide>
-                    );
+                      )
+                    }
                   });
                 })}
               </Swiper>
